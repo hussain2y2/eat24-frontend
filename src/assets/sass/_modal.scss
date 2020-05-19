@@ -1,0 +1,51 @@
+// Modal
+.modal-lg {
+  @media (min-width: 1024px) {
+    width: 45%;
+  }
+}
+
+.modal-content {
+  z-index: 1050;
+  border-radius: $border-radius;
+  border: 0;
+  .modal-header {
+    background-color: #FCFCFC;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    padding: 0;
+    display: flex;
+    border-bottom: 0 !important;
+    .nav-pills {
+      flex: 1;
+      border-top-right-radius: 0 !important;
+      .nav-item {
+        &:last-child {
+          .nav-link {
+            border-top-right-radius: 0 !important;
+          }
+        }
+      }
+    }
+    .header-title {
+      flex: 1;
+      min-height: 48px !important;
+      padding-left: 1rem;
+      margin: 0 !important;
+      h2 {
+        margin-bottom: 0;
+        line-height: 48px;
+      }
+    }
+
+    .btn-close {
+      width: 48px;
+      height: 48px;
+      border-top-right-radius: $border-radius;
+      background-color: $yellow;
+      img {
+        width: 20px;
+      }
+    }
+  }
+}

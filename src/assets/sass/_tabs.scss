@@ -1,0 +1,51 @@
+.mh278 {
+  min-height: auto;
+  @media (min-width: 1024px) {
+    min-height: 278px;
+  }
+}
+
+ul.nav-pills {
+  background-color: #324386;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 48px;
+  .nav-item {
+    &:first-child {
+      .nav-link {
+        border-top-left-radius: 8px !important;
+      }
+    }
+    &:last-child {
+      .nav-link {
+        border-top-right-radius: 8px !important;
+      }
+    }
+    .nav-link {
+      border-radius: 0;
+      font-weight: 500;
+      color: #FFFFFF;
+      cursor: pointer;
+      position: relative;
+      height: 48px;
+      line-height: 32px;
+      @media (max-width: 576px) {
+        padding: 0.5rem 0 !important;
+        font-size: 12px !important;
+      }
+      &.active {
+        &:after {
+          content: '';
+          position: absolute;
+          border: 8px solid transparent;
+          border-top-color: #446BB3;
+          left: calc(50% - 4px);
+          bottom: -15px;
+        }
+      }
+    }
+  }
+}
+.tab-panel {
+  padding: 1rem;
+}

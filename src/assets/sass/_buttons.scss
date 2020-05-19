@@ -1,0 +1,97 @@
+.b135 {
+  width: 110px;
+  margin: 5px;
+  @media (min-width: 991px) {
+    width: 135px;
+  }
+  @media (min-width: 1600px) {
+    width: 180px;
+  }
+}
+
+.b185 {
+  width: 185px;
+}
+
+.b200 {
+  width: 200px;
+}
+
+.ws100 {
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+}
+
+.btn {
+  text-transform: uppercase;
+  font-weight: $font-weight-medium;
+  border-radius: 0;
+  box-shadow: none !important;
+}
+
+.btn-success {
+  color: $white;
+}
+
+.btn-outline-success {
+  color: $black;
+  &:disabled {
+    color: $gray-90 !important;
+  }
+  &:hover,
+  &:active {
+    &:not(:disabled) {
+      color: $white !important;
+    }
+  }
+}
+
+.btn-signup {
+  width: 200px;
+  border: 2px solid $white;
+  color: $white;
+  @media (min-width: 1024px) {
+    width: 260px;
+    height: 48px;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $white !important;
+  }
+}
+
+.btn-social {
+  border: 1px solid $green;
+}
+
+.btn-arrow {
+  display: inline-block;
+  background-image: url("./assets/images/arrow-green.svg");
+  width: 12px;
+  height: 14px;
+}
+
+.btn-outline-success {
+  &:hover,
+  &:active {
+    &:not(:disabled) {
+      .btn-arrow {
+        background-image: url("./assets/images/arrow-white.svg");
+      }
+    }
+  }
+}
+
+.btn-info {
+  background-color: #ffd200;
+  &:hover {
+    background-color: #e2ba00;
+  }
+}
+
+.btn-transparent {
+  border: 0;
+  background-color: transparent;
+}

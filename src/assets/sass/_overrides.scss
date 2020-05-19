@@ -1,0 +1,27 @@
+// Main navigation
+nav.navbar {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+html {
+  overflow-y: auto;
+}
+
+.section {
+  padding: 2rem 1rem;
+}
+
+.box {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  border: 0;
+}
+
+.button {
+  border-radius: 0;
+}
+
+.btn {
+  cursor: pointer !important;
+}
+

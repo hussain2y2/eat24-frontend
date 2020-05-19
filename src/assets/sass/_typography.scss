@@ -1,0 +1,45 @@
+.font-medium {
+  font-weight: $font-weight-medium;
+}
+
+.font-bold {
+  font-weight: $font-weight-bold;
+}
+
+h1 {
+  font-size: 1.75rem;
+  @media (max-width: 991px) {
+    font-size: 1.5rem;
+  }
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h2.title {
+  font-size: 1.25rem !important;
+  font-weight: $font-weight-bold;
+  margin-bottom: 0.5rem !important;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+.sp12 {
+  font-size: 12px;
+}
+.sp14 {
+  font-size: 14px;
+}
+.sp16 {
+  font-size: 16px;
+}
+.sp24 {
+  font-size: 24px;
+  @media (min-width: 1440px) {
+    font-size: 32px;
+  }
+}

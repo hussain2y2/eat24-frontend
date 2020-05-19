@@ -1,0 +1,11 @@
+.form-control {
+  box-shadow: none !important;
+  &.has-error {
+    border-color: $danger;
+  }
+}
+.form-group {
+  span.text-danger {
+    font-size: 0.75rem;
+  }
+}

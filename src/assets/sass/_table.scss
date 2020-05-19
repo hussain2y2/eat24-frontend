@@ -1,0 +1,25 @@
+.table {
+  thead {
+    tr {
+      th {
+        color: $blue;
+        font-size: 14px;
+        @media (min-width: 1600px) {
+          font-size: 16px;
+        }
+        white-space: nowrap;
+      }
+    }
+  }
+  tbody {
+    tr {
+      td {
+        vertical-align: middle;
+        font-size: 14px;
+        @media (min-width: 1600px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

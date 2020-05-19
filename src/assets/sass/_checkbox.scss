@@ -1,0 +1,56 @@
+.checkbox-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 24px;
+  padding-right: 8px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: $font-weight-medium;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.check-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: $white;
+  border: 1px solid $blue;
+}
+
+/* Create the check-mark/indicator (hidden when not checked) */
+.check-mark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the check-mark when checked */
+.checkbox-container input:checked ~ .check-mark:after {
+  display: block;
+}
+
+/* Style the check-mark/indicator */
+.checkbox-container .check-mark:after {
+  background-image: url("./assets/images/icon_tick.svg");
+  width: 12px;
+  height: 11px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}

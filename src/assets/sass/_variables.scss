@@ -1,0 +1,33 @@
+$font-size-base: 0.875rem;
+@media screen and (min-width: 1367px) {
+  $font-size-base: 1rem;
+}
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+$border-radius: 8px;
+
+// Override / set color variables
+$white: #fff;
+$black: #000;
+$green: #89B92E;
+$blue: #446BB3;
+$orange: #f26c22;
+$yellow: #FFD200;
+$red: #E40C0C;
+$dark-blue: #324386;
+$gray-90: #909090;
+$grey-lighter: #b0b0b0;
+$body-background-color: #FCFCFC;
+
+// Set brand colors
+$primary: $blue;
+$success: $green;
+$info: $yellow;
+$warning: $orange;
+$danger: $red;
+
+$font-family-sans-serif: 'Roboto', sans-serif;
+$font-family-base: $font-family-sans-serif;
+

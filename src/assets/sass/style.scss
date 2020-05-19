@@ -1,0 +1,19 @@
+@import "common";
+@import "colors";
+@import "typography";
+@import "table";
+@import "inputs";
+@import "buttons";
+@import "labels";
+@import "tabs";
+@import "modal";
+@import "checkbox";
+@import "loader";
+
+.w-full {
+  width: calc(100% - 48px);
+  display: inline-block;
+}
+
+
+
