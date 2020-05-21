@@ -16,9 +16,11 @@ export default new Vuex.Store({
   state: {
     apiBaseUrl: process.env.VUE_APP_API_URL,
     appVersion: process.env.VUE_APP_VERSION,
-    pos: {
-      tasks: []
-    }
+    isLoggedIn: false,
+    scope: null,
+    code: null,
+    taskListId: null,
+    tasks: []
   },
   getters: getters,
   mutations: mutations,

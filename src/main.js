@@ -7,6 +7,7 @@ import VueAxios from "vue-axios";
 import VueLodash from "vue-lodash";
 import Paginate from "vuejs-paginate";
 import VueCookie from "vue-cookie";
+import VueLocalStorage from "vue-localstorage";
 import VueSweetalert2 from "vue-sweetalert2";
 import App from "./App.vue";
 import router from "./router";
@@ -22,6 +23,7 @@ Vue.use(VueAxios, axios);
 Vue.use(VeeValidate, {
   errorBagName: "vErrors"
 });
+Vue.use(VueLocalStorage);
 
 Vue.use(VueLodash, {
   name: "lodash"
