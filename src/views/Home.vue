@@ -96,7 +96,7 @@ export default {
     authenticate() {
       const apiBaseUrl = process.env.VUE_APP_API_URL;
 
-      this.$http.post(`${apiBaseUrl}:8000/api/tasks`).then(response => {
+      this.$http.post(`${apiBaseUrl}/api/tasks`).then(response => {
         if (response.data.login_url) {
           window.location = response.data.login_url;
         }
@@ -111,13 +111,13 @@ export default {
       const scope = this.$store.getters.getAccessScope;
       const code = this.$store.getters.getAccessToken;
       if (code && scope) {
-        this.$http.post(`${apiBaseUrl}:8000/api/tasks`, {
+        this.$http.post(`${apiBaseUrl}/api/tasks`, {
           scope, code, state: "LIST"
         }).then(response => {
           const { taskList } = response.data;
           const taskListId = taskList[0].id;
           this.$store.commit("setList", { taskListId });
-          this.$http.post(`${apiBaseUrl}:8000/api/tasks`, {
+          this.$http.post(`${apiBaseUrl}/api/tasks`, {
             scope, code, state: "TASKS", taskList: taskListId
           }).then(response => {
             const { tasks } = response.data;
@@ -138,7 +138,7 @@ export default {
       const scope = this.$store.getters.getAccessScope;
       const code = this.$store.getters.getAccessToken;
 
-      this.$http.post(`${apiBaseUrl}:8000/api/tasks`, {
+      this.$http.post(`${apiBaseUrl}/api/tasks`, {
         scope, code, taskList, title, notes, state: "INSERT"
       }).then(response => {
         const { tasks } = response.data;
@@ -152,7 +152,7 @@ export default {
       const apiBaseUrl = process.env.VUE_APP_API_URL;
       const scope = this.$store.getters.getAccessScope;
       const code = this.$store.getters.getAccessToken;
-      this.$http.post(`${apiBaseUrl}:8000/api/tasks`, {
+      this.$http.post(`${apiBaseUrl}/api/tasks`, {
         scope, code, state: "DELETE", taskList, task
       }).then(response => {
         const { tasks } = response.data;
