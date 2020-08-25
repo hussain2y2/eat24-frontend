@@ -13,7 +13,7 @@
     "axios": "^0.18.1",
     "axios-jsonp-pro": "^1.1.4",
     "bootstrap": "^4.4.1",
-    "highcharts": "^7.0.3",
+    "highcharts": "^7.2.2",
     "highcharts-vue": "^1.2.0",
     "imagesloaded": "^4.1.4",
     "jquery": "^3.4.1",
