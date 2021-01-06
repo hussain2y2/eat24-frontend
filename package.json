@@ -10,7 +10,7 @@
   "dependencies": {
     "@deveodk/vue-toastr": "^1.0.4",
     "@radial-color-picker/vue-color-picker": "^2.3.0",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "axios-jsonp-pro": "^1.1.4",
     "bootstrap": "^4.4.1",
     "highcharts": "^7.0.3",
