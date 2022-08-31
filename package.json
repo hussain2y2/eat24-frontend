@@ -20,7 +20,7 @@
     "lodash": "^4.17.15",
     "mobile-device-detect": "^0.2.3",
     "moment": "^2.24.0",
-    "moment-timezone": "^0.5.23",
+    "moment-timezone": "^0.5.35",
     "popper.js": "^1.14.7",
     "typeface-roboto": "0.0.54",
     "v-tooltip": "^2.0.3",
